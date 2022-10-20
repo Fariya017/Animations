@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(182, 243, 243);
+}
+.container1 .container2 .container3{
+    position: static;
+}
+.para1{
+  margin-top: 30px;  
+  position: relative; 
+  animation-duration: 3s;
+  animation-name: myanimation1;
+  animation-iteration-count: 3;
+}
+@keyframes myanimation1 {
+   
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    .para2{
+        padding-top: 100px;  
+        position: relative; 
+        animation-duration: 3s;
+        animation-name: myanimation2;
+        animation-iteration-count:2;
+      }
+    
+      
+      @keyframes myanimation2{
+        from {
+          margin-left: 500px;
+          width: 100%;
+        }
+      
+        50% {
+          font-size: 40px;
+          margin-left: 50px;
+          width: 900px;
+        }
+      
+        to {
+          margin-left: 0px;
+          width: 100%;
+        }
+      }
+.container3{
+    padding-top: 50px;
+}
+#watchme{  
+    position: relative; 
+    animation-duration: 3s;
+    animation-name: myanimation3;
+    animation-iteration-count:infinite;
+    animation-direction:alternate ;
+      }
+      @keyframes myanimation3{
+        from{
+          margin-left:100%;
+          width: 100%;
+        }
+
+      
+        to {
+          margin-right: 100%;
+          width: 100%;
+        }
+      }
+      
+      
